@@ -101,6 +101,7 @@ static NSString * const reuseIdentifier = @"Cell";
                     movie.title = movieDictionary[@"title"];
                     movie.imageURLString = movieDictionary[@"posters"][@"profile"];
                     movie.RT_idNumber = movieDictionary[@"id"];
+                    movie.score = [movieDictionary[@"ratings"][@"critics_score"] integerValue];
                     
                     [movieList addObject:movie];
                 }

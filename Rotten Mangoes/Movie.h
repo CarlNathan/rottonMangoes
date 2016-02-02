@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *imageURLString;
 @property (strong, nonatomic) NSString *RT_idNumber;
+@property (assign, nonatomic) NSInteger score;
 
 
 @end

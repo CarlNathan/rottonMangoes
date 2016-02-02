@@ -35,5 +35,9 @@
     self.imageView.frame = self.contentView.bounds;
 }
 
+- (void)prepareForReuse {
+    self.imageView.image = nil;
+}
+
 
 @end

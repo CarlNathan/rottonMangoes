@@ -14,9 +14,5 @@
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) Movie *movie;
-@property (strong, nonatomic) UIScrollView *scrollView;
-@property (strong, nonatomic) NSArray *reviews;
-@property (strong, nonatomic) UIImageView *imageView;
-@property (strong, nonatomic) UIView *reviewView;
 
 @end

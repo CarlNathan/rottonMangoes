@@ -21,6 +21,7 @@
 		EDDA73651C5FDC0200EA2BBA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA73641C5FDC0200EA2BBA /* DetailViewController.m */; };
 		EDDA73681C5FDEED00EA2BBA /* ReviewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA73671C5FDEED00EA2BBA /* ReviewsController.m */; };
 		EDDA736B1C5FE36800EA2BBA /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA736A1C5FE36800EA2BBA /* Review.m */; };
+		EDDA736E1C60032200EA2BBA /* ReviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA736D1C60032200EA2BBA /* ReviewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		EDDA73671C5FDEED00EA2BBA /* ReviewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReviewsController.m; path = ../ReviewsController.m; sourceTree = "<group>"; };
 		EDDA73691C5FE36800EA2BBA /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Review.h; path = ../Review.h; sourceTree = "<group>"; };
 		EDDA736A1C5FE36800EA2BBA /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Review.m; path = ../Review.m; sourceTree = "<group>"; };
+		EDDA736C1C60032200EA2BBA /* ReviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReviewView.h; path = ../ReviewView.h; sourceTree = "<group>"; };
+		EDDA736D1C60032200EA2BBA /* ReviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReviewView.m; path = ../ReviewView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				EDDA736A1C5FE36800EA2BBA /* Review.m */,
 				EDDA73631C5FDC0200EA2BBA /* DetailViewController.h */,
 				EDDA73641C5FDC0200EA2BBA /* DetailViewController.m */,
+				EDDA736C1C60032200EA2BBA /* ReviewView.h */,
+				EDDA736D1C60032200EA2BBA /* ReviewView.m */,
 				EDDA73301C5FBBCF00EA2BBA /* Main.storyboard */,
 				EDDA73331C5FBBCF00EA2BBA /* Assets.xcassets */,
 				EDDA73351C5FBBCF00EA2BBA /* LaunchScreen.storyboard */,
@@ -306,6 +311,7 @@
 				EDDA732C1C5FBBCF00EA2BBA /* AppDelegate.m in Sources */,
 				EDDA735F1C5FC8C300EA2BBA /* Movie.m in Sources */,
 				EDDA735C1C5FC47100EA2BBA /* CollectionViewCell.m in Sources */,
+				EDDA736E1C60032200EA2BBA /* ReviewView.m in Sources */,
 				EDDA73291C5FBBCF00EA2BBA /* main.m in Sources */,
 				EDDA73651C5FDC0200EA2BBA /* DetailViewController.m in Sources */,
 				EDDA73681C5FDEED00EA2BBA /* ReviewsController.m in Sources */,
