@@ -10,6 +10,7 @@
 #import "Movie.h"
 #import "photoController.h"
 #import "ReviewsController.h"
+#import "MapViewController.h"
 
 @interface DetailViewController : UIViewController
 

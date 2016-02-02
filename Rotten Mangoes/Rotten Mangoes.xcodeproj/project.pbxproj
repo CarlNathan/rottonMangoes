@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED4F21E21C61098A00530B4A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F21E11C61098A00530B4A /* MapViewController.m */; };
+		ED4F21E41C610CB600530B4A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4F21E31C610CB600530B4A /* MapKit.framework */; };
 		EDDA73291C5FBBCF00EA2BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA73281C5FBBCF00EA2BBA /* main.m */; };
 		EDDA732C1C5FBBCF00EA2BBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA732B1C5FBBCF00EA2BBA /* AppDelegate.m */; };
 		EDDA732F1C5FBBCF00EA2BBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA732E1C5FBBCF00EA2BBA /* ViewController.m */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED4F21E01C61098A00530B4A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
+		ED4F21E11C61098A00530B4A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
+		ED4F21E31C610CB600530B4A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EDDA73241C5FBBCF00EA2BBA /* Rotten Mangoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rotten Mangoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDA73281C5FBBCF00EA2BBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDDA732A1C5FBBCF00EA2BBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4F21E41C610CB600530B4A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,7 @@
 		EDDA731B1C5FBBCF00EA2BBA = {
 			isa = PBXGroup;
 			children = (
+				ED4F21E31C610CB600530B4A /* MapKit.framework */,
 				EDDA73261C5FBBCF00EA2BBA /* Rotten Mangoes */,
 				EDDA73401C5FBBCF00EA2BBA /* Rotten MangoesTests */,
 				EDDA734B1C5FBBCF00EA2BBA /* Rotten MangoesUITests */,
@@ -140,6 +147,8 @@
 				EDDA73641C5FDC0200EA2BBA /* DetailViewController.m */,
 				EDDA736C1C60032200EA2BBA /* ReviewView.h */,
 				EDDA736D1C60032200EA2BBA /* ReviewView.m */,
+				ED4F21E01C61098A00530B4A /* MapViewController.h */,
+				ED4F21E11C61098A00530B4A /* MapViewController.m */,
 				EDDA73301C5FBBCF00EA2BBA /* Main.storyboard */,
 				EDDA73331C5FBBCF00EA2BBA /* Assets.xcassets */,
 				EDDA73351C5FBBCF00EA2BBA /* LaunchScreen.storyboard */,
@@ -315,6 +324,7 @@
 				EDDA73291C5FBBCF00EA2BBA /* main.m in Sources */,
 				EDDA73651C5FDC0200EA2BBA /* DetailViewController.m in Sources */,
 				EDDA73681C5FDEED00EA2BBA /* ReviewsController.m in Sources */,
+				ED4F21E21C61098A00530B4A /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +548,7 @@
 				EDDA73531C5FBBCF00EA2BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDDA73541C5FBBCF00EA2BBA /* Build configuration list for PBXNativeTarget "Rotten MangoesTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +557,7 @@
 				EDDA73561C5FBBCF00EA2BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDDA73571C5FBBCF00EA2BBA /* Build configuration list for PBXNativeTarget "Rotten MangoesUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +566,7 @@
 				EDDA73591C5FBBCF00EA2BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

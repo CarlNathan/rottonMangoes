@@ -44,13 +44,13 @@
         [self.scrollView addSubview:self.reviewView];
     }];
     
-    self.scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-    self.scoreLabel.text = [NSString stringWithFormat:@"%ld", self.movie.score];
-    self.scoreLabel.backgroundColor = [UIColor grayColor];
-    [self.imageView addSubview:self.scoreLabel];
+    [self prepareScoreLabel];
+    
+    [self prepareMapViewController];
     
     UIGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(close)];
     [self.view addGestureRecognizer:tap];
+    
     
 }
 
@@ -65,6 +65,18 @@
 
 -(void)close{
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) prepareScoreLabel {
+    
+    self.scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    self.scoreLabel.text = [NSString stringWithFormat:@"%ld", self.movie.score];
+    self.scoreLabel.backgroundColor = [UIColor grayColor];
+    [self.imageView addSubview:self.scoreLabel];
+}
+
+- (void) prepareMapViewController {
+    //MapViewController *mapViewController =
 }
 
 
