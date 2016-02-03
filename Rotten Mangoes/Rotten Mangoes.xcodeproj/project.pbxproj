@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		ED4F21E21C61098A00530B4A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F21E11C61098A00530B4A /* MapViewController.m */; };
 		ED4F21E41C610CB600530B4A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4F21E31C610CB600530B4A /* MapKit.framework */; };
+		ED4F21E71C61115200530B4A /* MovieLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F21E61C61115200530B4A /* MovieLocationManager.m */; };
+		ED4F21EA1C612E9F00530B4A /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F21E91C612E9F00530B4A /* Theater.m */; };
+		ED4F21ED1C615EB600530B4A /* TheaterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4F21EC1C615EB600530B4A /* TheaterDetailViewController.m */; };
 		EDDA73291C5FBBCF00EA2BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA73281C5FBBCF00EA2BBA /* main.m */; };
 		EDDA732C1C5FBBCF00EA2BBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA732B1C5FBBCF00EA2BBA /* AppDelegate.m */; };
 		EDDA732F1C5FBBCF00EA2BBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA732E1C5FBBCF00EA2BBA /* ViewController.m */; };
@@ -47,6 +50,12 @@
 		ED4F21E01C61098A00530B4A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
 		ED4F21E11C61098A00530B4A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
 		ED4F21E31C610CB600530B4A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		ED4F21E51C61115200530B4A /* MovieLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieLocationManager.h; path = ../MovieLocationManager.h; sourceTree = "<group>"; };
+		ED4F21E61C61115200530B4A /* MovieLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieLocationManager.m; path = ../MovieLocationManager.m; sourceTree = "<group>"; };
+		ED4F21E81C612E9F00530B4A /* Theater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Theater.h; path = ../Theater.h; sourceTree = "<group>"; };
+		ED4F21E91C612E9F00530B4A /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Theater.m; path = ../Theater.m; sourceTree = "<group>"; };
+		ED4F21EB1C615EB600530B4A /* TheaterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheaterDetailViewController.h; path = ../TheaterDetailViewController.h; sourceTree = "<group>"; };
+		ED4F21EC1C615EB600530B4A /* TheaterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheaterDetailViewController.m; path = ../TheaterDetailViewController.m; sourceTree = "<group>"; };
 		EDDA73241C5FBBCF00EA2BBA /* Rotten Mangoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rotten Mangoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDA73281C5FBBCF00EA2BBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDDA732A1C5FBBCF00EA2BBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -149,6 +158,12 @@
 				EDDA736D1C60032200EA2BBA /* ReviewView.m */,
 				ED4F21E01C61098A00530B4A /* MapViewController.h */,
 				ED4F21E11C61098A00530B4A /* MapViewController.m */,
+				ED4F21E51C61115200530B4A /* MovieLocationManager.h */,
+				ED4F21E61C61115200530B4A /* MovieLocationManager.m */,
+				ED4F21E81C612E9F00530B4A /* Theater.h */,
+				ED4F21E91C612E9F00530B4A /* Theater.m */,
+				ED4F21EB1C615EB600530B4A /* TheaterDetailViewController.h */,
+				ED4F21EC1C615EB600530B4A /* TheaterDetailViewController.m */,
 				EDDA73301C5FBBCF00EA2BBA /* Main.storyboard */,
 				EDDA73331C5FBBCF00EA2BBA /* Assets.xcassets */,
 				EDDA73351C5FBBCF00EA2BBA /* LaunchScreen.storyboard */,
@@ -317,12 +332,15 @@
 				EDDA73621C5FD36700EA2BBA /* photoController.m in Sources */,
 				EDDA732F1C5FBBCF00EA2BBA /* ViewController.m in Sources */,
 				EDDA736B1C5FE36800EA2BBA /* Review.m in Sources */,
+				ED4F21EA1C612E9F00530B4A /* Theater.m in Sources */,
 				EDDA732C1C5FBBCF00EA2BBA /* AppDelegate.m in Sources */,
 				EDDA735F1C5FC8C300EA2BBA /* Movie.m in Sources */,
 				EDDA735C1C5FC47100EA2BBA /* CollectionViewCell.m in Sources */,
 				EDDA736E1C60032200EA2BBA /* ReviewView.m in Sources */,
 				EDDA73291C5FBBCF00EA2BBA /* main.m in Sources */,
+				ED4F21ED1C615EB600530B4A /* TheaterDetailViewController.m in Sources */,
 				EDDA73651C5FDC0200EA2BBA /* DetailViewController.m in Sources */,
+				ED4F21E71C61115200530B4A /* MovieLocationManager.m in Sources */,
 				EDDA73681C5FDEED00EA2BBA /* ReviewsController.m in Sources */,
 				ED4F21E21C61098A00530B4A /* MapViewController.m in Sources */,
 			);

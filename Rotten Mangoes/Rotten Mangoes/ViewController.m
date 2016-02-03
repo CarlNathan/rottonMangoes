@@ -70,9 +70,9 @@ static NSString * const reuseIdentifier = @"Cell";
     flowLayout.minimumInteritemSpacing = MINIMUM_ITEM_SPACING;
     flowLayout.itemSize = CGSizeMake(self.view.frame.size.width / 2 - 30, self.view.frame.size.height / 3);
     flowLayout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, HEADER_HEIGHT);
-    flowLayout.sectionInset = UIEdgeInsetsMake(EDGE_INSET_SYMETRIC,EDGE_INSET_SYMETRIC,EDGE_INSET_SYMETRIC,EDGE_INSET_SYMETRIC);
+    flowLayout.sectionInset = UIEdgeInsetsMake(0,EDGE_INSET_SYMETRIC,EDGE_INSET_SYMETRIC,EDGE_INSET_SYMETRIC);
     
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x, self.view.bounds.origin.y, self.view.bounds.size.width, self.view.bounds.size.height) collectionViewLayout:flowLayout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x, self.view.bounds.origin.y + 20, self.view.bounds.size.width, self.view.bounds.size.height - 20) collectionViewLayout:flowLayout];
     
     [self.collectionView registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     [self.collectionView setDataSource:self];

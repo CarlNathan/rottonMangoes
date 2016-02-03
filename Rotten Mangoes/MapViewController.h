@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "Movie.h"
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic) MKMapView *mapView;
-@property (strong, nonatomic)
+@property (strong, nonatomic) CLLocationManager *locationManager;
+
+- (instancetype) initWithMovie: (Movie*) movie;
+
 
 @end

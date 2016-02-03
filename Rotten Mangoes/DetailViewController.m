@@ -8,8 +8,9 @@
 
 #import "DetailViewController.h"
 #import "ReviewView.h"
+#import "TheaterDetailViewController.h"
 
-@interface DetailViewController ()
+@interface DetailViewController () <UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIScrollView *scrollView;
 @property (strong, nonatomic) NSArray *reviews;
@@ -25,9 +26,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor blackColor];
     
-    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height - 20)];
+    self.scrollView.delegate = self;
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
     
     [self.view addSubview:self.scrollView];
@@ -46,10 +48,13 @@
     
     [self prepareScoreLabel];
     
-    [self prepareMapViewController];
     
     UIGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(close)];
     [self.view addGestureRecognizer:tap];
+    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipeLeft)];
+    [swipeLeft setDirection:(UISwipeGestureRecognizerDirectionLeft)];
+    [self.view addGestureRecognizer:swipeLeft];
+    
     
     
 }
@@ -57,10 +62,12 @@
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     CGSize size= self.view.bounds.size;
+    self.scrollView.frame = CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height - 20);
     CGSize imagesize = CGSizeMake(size.width, 500);
-    self.scrollView.contentSize = CGSizeMake(size.width, size.height *2);
     self.imageView.frame = CGRectMake(0.0, 20, imagesize.width, imagesize.height);
-    self.reviewView.frame = CGRectMake(0, imagesize.height + 30, size.width, size.height);
+    self.reviewView.frame = CGRectMake(0, imagesize.height + 30, size.width, 300);
+    self.scrollView.contentSize = CGSizeMake(size.width, self.imageView.frame.size.height + self.reviewView.frame.size.height);
+
 }
 
 -(void)close{
@@ -72,12 +79,16 @@
     self.scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
     self.scoreLabel.text = [NSString stringWithFormat:@"%ld", self.movie.score];
     self.scoreLabel.backgroundColor = [UIColor grayColor];
+    self.scoreLabel.textAlignment = NSTextAlignmentCenter;
     [self.imageView addSubview:self.scoreLabel];
 }
 
-- (void) prepareMapViewController {
-    //MapViewController *mapViewController =
-}
 
+- (void) didSwipeLeft {
+    
+        TheaterDetailViewController *theaterDetailViewController = [[TheaterDetailViewController alloc] initWithMovie: self.movie];
+        
+        [self presentViewController:theaterDetailViewController animated:YES completion:nil];
+}
 
 @end
