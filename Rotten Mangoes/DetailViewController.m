@@ -32,8 +32,9 @@
     self.scrollView.delegate = self;
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
     
+    [self.view addSubview:self.imageView];
     [self.view addSubview:self.scrollView];
-    [self.scrollView addSubview:self.imageView];
+    
     self.reviewView = [[ReviewView alloc] initWithFrame:CGRectMake(0, 320, 320, 320)];
     
     [photoController imageForPhoto:self.movie.imageURLString completion:^(UIImage *image) {
