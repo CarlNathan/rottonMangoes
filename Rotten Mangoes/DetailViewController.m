@@ -56,6 +56,8 @@
     [swipeLeft setDirection:(UISwipeGestureRecognizerDirectionLeft)];
     [self.view addGestureRecognizer:swipeLeft];
     
+    [self prepareGradient];
+    
     
     
 }
@@ -90,6 +92,14 @@
         TheaterDetailViewController *theaterDetailViewController = [[TheaterDetailViewController alloc] initWithMovie: self.movie];
         
         [self presentViewController:theaterDetailViewController animated:YES completion:nil];
+}
+
+- (void) prepareGradient {
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = CGRectMake(0, 400, self.view.frame.size.width, 130);
+    gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor clearColor] CGColor], (id)[[UIColor blackColor] CGColor], nil];
+    
+    [self.scrollView.layer insertSublayer:gradient atIndex:0];
 }
 
 @end
